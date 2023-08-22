@@ -1,0 +1,168 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family:'Roboto', sans-serif;
+}
+
+.container{
+    max-width:1024px;
+    width:100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:30px;   
+}
+header{
+    background-color: #ffd700;
+    color:#2f4f4f;
+    margin-bottom: 10px;
+}
+
+.list-head ul li{
+    display: inline;
+    margin-left: 10px;
+    font-weight: bold;
+}
+
+.list-head ul li a{
+    text-decoration: none;
+    font-size: 18px;
+    color:#2f4f4f;
+}
+.sobre{
+    margin-bottom:50px;
+}
+.sobre article{
+    display:flex;
+}
+
+.sobre article h3{
+    color:#ffd700;
+    border-bottom:1px solid #ffd700;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    font-size: 24px;
+    font-style: italic;
+}
+
+.sobre article .conteudo{
+    margin-left: 10px;
+}
+.sobre article img{
+    max-width:300px;
+}
+.produtos{
+    display: flex;
+   
+    padding:10px;
+    margin-bottom:100px;
+}
+.produtos article{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    margin:0 5px;
+}
+
+.titulo-produtos{
+   margin-bottom:20px;
+   font-size: 24px;
+   color:#ffd700;
+   border-bottom:2px solid #ffd700;
+   padding-bottom:10px;
+   font-style: italic;
+}
+.produtos article img{
+    max-width:206px;
+    margin-left:20px;
+}
+.produtos article h3, .produtos article p, .produtos article img{
+    margin-bottom: 6px;
+}
+
+.produtos article button{
+    background-color: #ffd700;
+    color:#2f4f4f;
+    border-radius:3px;
+    padding:7px;
+    width:100%;
+    font-weight: bold;
+    border:0px solid transparent;
+    font-size:16px;
+    cursor: pointer;
+}
+
+footer{
+    background-color: #ffd700;
+    padding:10px;
+    text-align: center;
+    color:#2f4f4f;
+    font-weight: bold;
+}
+
+@media (max-width:480px){
+    header> .container{
+        flex-direction: column;
+        gap:15px;
+    }
+
+    header > .container nav ul li{
+        background-color: aliceblue;
+        padding:5px;
+        border-radius: 3px;
+    }
+    .sobre article{
+        display: flex;
+        flex-direction: column;
+    }
+    .sobre article img{
+        margin-bottom:20px;
+    }
+
+    .sobre article img, .sobre article h3, .sobre article p{
+        max-width:100%;
+    }
+    
+    .produtos{
+        display: flex;
+        flex-direction:row;
+        flex-wrap: wrap;
+        gap:30px;
+    }
+    .produtos article img{
+        max-width: 100%;
+        margin-left: 0;
+    }
+  
+};
+
+/* estilos para tablet*/
+
+@media (min-width:768px) and (max-width:1023px){
+    .sobre article{
+        display: flex;
+        flex-direction: column;
+    }
+    .sobre article img{
+        margin-bottom:20px;
+    }
+
+    .sobre article img, .sobre article h3, .sobre article p{
+        max-width: 100%;
+    }
+    
+    .produtos{
+        display: flex;
+        flex-direction:column;
+        flex-wrap: wrap;
+        gap:30px;
+    }
+
+    .produtos article img{
+        max-width: 100%;
+        margin-left: 0;
+    }
+  
+ }
